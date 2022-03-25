@@ -1,3 +1,4 @@
+import React from 'react'
 import { View, Text, StyleSheet, Platform, StatusBar } from 'react-native'
 
 const Header = () => {

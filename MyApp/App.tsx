@@ -1,10 +1,44 @@
 import React from 'react'
+import { StatusBar } from 'expo-status-bar'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import History from './Screens/history'
 import Home from './Screens/home'
-import Login from './Screens/login'
+import AddTransaction from './Screens/addTransaction';
+import Profile from './Screens/profile'
+import About from './Screens/about'
+
+const Stack = createNativeStackNavigator()
 
 const App = () => {
   return (
-    <Home />
+    <>
+      <StatusBar style='auto' />
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen
+            name="Home"
+            component={Home}
+          />
+          <Stack.Screen
+            name="History"
+            component={History}
+          />
+          <Stack.Screen
+            name="AddTransaction"
+            component={AddTransaction}
+          />
+          <Stack.Screen
+            name="Profile"
+            component={Profile}
+          />
+          <Stack.Screen
+            name="About"
+            component={About}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   )
 }
 
