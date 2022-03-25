@@ -5,7 +5,8 @@ import Transaction from '../Component/Transaction'
 // import Chart from './../Component/Chart'
 import Header from './../Component/Header'
 
-const Home = () => {
+// @ts-ignore
+const Home = ({ navigation }) => {
   return (
     <>
       <View style={styles.container}>
@@ -13,7 +14,7 @@ const Home = () => {
         {/* <Chart /> */}
         <Transaction />
       </View>
-      <Footer />
+      <Footer navigation={navigation} />
     </>
   )
 }
