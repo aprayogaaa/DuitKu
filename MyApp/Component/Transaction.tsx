@@ -1,13 +1,14 @@
+import React from 'react'
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import TransactionCard from './TransactionCard'
 
 // @ts-ignore
-const Transaction = ({ navigation }) => {
+const Transaction = () => {
   return (
     <View style={styles.container}>
       <View style={styles.headerContainer}>
         <Text style={styles.headerText}>This Month</Text>
-        <Text style={styles.headerMore} onPress={() => navigation.navigate('History')}>View more</Text>
+        <Text style={styles.headerMore}>View more</Text>
       </View>
       <View>
         <ScrollView>

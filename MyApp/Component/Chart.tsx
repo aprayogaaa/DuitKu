@@ -1,3 +1,4 @@
+import React from 'react'
 import { Dimensions, View } from 'react-native'
 import { LineChart } from 'react-native-chart-kit'
 

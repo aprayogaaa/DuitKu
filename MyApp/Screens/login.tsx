@@ -13,15 +13,13 @@ const App = () => {
         <Text style={styles.Text}>Welcome {'\n'}Back</Text>
       </View>
       <Text style={styles.Text2}>Email</Text>
-      <TextInput
-        style={styles.Input}
+      <TextInput style={styles.Input}
         // onChangeText={onChangeText}
         // value={text}
         placeholder="Input your email"
       />
       <Text style={styles.Text2}>Password</Text>
-      <TextInput
-        style={styles.Input}
+      <TextInput style={styles.Input}
         textContentType='newPassword'
         secureTextEntry
         value={password}

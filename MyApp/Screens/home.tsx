@@ -1,7 +1,8 @@
+import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import Footer from '../Component/Footer'
 import Transaction from '../Component/Transaction'
-import Chart from './../Component/Chart'
+// import Chart from './../Component/Chart'
 import Header from './../Component/Header'
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
     <>
       <View style={styles.container}>
         <Header />
-        <Chart />
+        {/* <Chart /> */}
         <Transaction />
       </View>
       <Footer />
