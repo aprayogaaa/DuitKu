@@ -25,21 +25,21 @@ const AddTransaction = ({ navigation }) => {
         </View>
         <View style={styles.formGroup}>
           <View style={styles.inputGroup}>
-            <Image source={require('./../images/amount.png')} style={styles.image} />
+            <Image source={require('./../img/amount.png')} style={styles.image} />
             <TextInput
               placeholder='Amount'
               style={styles.input}
             />
           </View>
           <View style={styles.inputGroup}>
-            <Image source={require('./../images/calendar.png')} style={styles.image} />
+            <Image source={require('./../img/calendar.png')} style={styles.image} />
             <TextInput
               placeholder='Choose date'
               style={styles.input}
             />
           </View>
           <View style={styles.inputGroup}>
-            <Image source={require('./../images/type.png')} style={styles.image} />
+            <Image source={require('./../img/type.png')} style={styles.image} />
             <TextInput
               placeholder='Enter type'
               style={styles.input}

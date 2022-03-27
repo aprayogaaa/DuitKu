@@ -13,14 +13,14 @@ const Profile = ({ navigation }) => {
         <View style={styles.menuCardContainer}>
           <View style={styles.menuCard}>
             <Text style={styles.menuText}>Change Personal Data</Text>
-            <TouchableWithoutFeedback>
-              <Image source={require('./../images/next.png')} />
+            <TouchableWithoutFeedback onPress={() => navigation.navigate('PersonalData')}>
+              <Image source={require('./../img/next.png')} />
             </TouchableWithoutFeedback>
           </View>
           <View style={styles.menuCard}>
             <Text style={styles.menuText}>About DuitKu</Text>
-            <TouchableWithoutFeedback>
-              <Image source={require('./../images/next.png')} />
+            <TouchableWithoutFeedback onPress={() => navigation.navigate('About')}>
+              <Image source={require('./../img/next.png')} />
             </TouchableWithoutFeedback>
           </View>
           <View style={styles.button}>

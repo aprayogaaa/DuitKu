@@ -7,6 +7,7 @@ import Home from './Screens/home'
 import AddTransaction from './Screens/addTransaction';
 import Profile from './Screens/profile'
 import About from './Screens/about'
+import PersonalData from './Screens/personalData'
 
 const Stack = createNativeStackNavigator()
 
@@ -35,6 +36,10 @@ const App = () => {
           <Stack.Screen
             name="About"
             component={About}
+          />
+          <Stack.Screen
+            name='PersonalData'
+            component={PersonalData}
           />
         </Stack.Navigator>
       </NavigationContainer>

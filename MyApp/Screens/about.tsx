@@ -9,7 +9,7 @@ const About = ({ navigation }) => {
       <View style={styles.container}>
         <View style={styles.headerContainer}>
           <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile')}>
-            <Image source={require('./../images/back.png')} />
+            <Image source={require('./../img/back.png')} />
           </TouchableWithoutFeedback>
           <Text style={styles.headerText}>About DuitKu</Text>
         </View>
